@@ -1,0 +1,100 @@
+.app_wrapper_container {
+    padding-right: 19rem;
+    padding-left: 19rem;
+    background-color: #e21b70;
+}
+.app_wrapper_container_holding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+}
+.app_title {
+    position: relative;
+    font-size: 11rem;
+    margin: 0px;
+}
+
+.app_wrapper_inner {
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+    color: white;
+  
+}
+
+.app_wrapper_inner h1 {
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+.app_wrapper_inner p {
+    font-weight: 100;
+}
+
+.app_svg_container {
+    padding-top: 5rem;
+}
+
+.app_svg_container img {
+    padding: 0px 0px 0px 10px;
+    transition: 350ms ease-in-out;
+}
+.app_svg_container img:hover{
+    transform: scale(0.9);
+    
+}
+
+#foodora-home-app-webp {
+    width: 800px;
+}
+/*
+.foodora_home-app-webp-orderNow {
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 130px;
+    padding: 0;
+    color: white;
+    font-size: 100px !important;
+    font-weight: bold;
+    text-transform:uppercase;
+    z-index: 9999;
+    text-shadow: 1px 5px 20px #000000;
+    opacity: 1;
+    -webkit-animation: example1 5s 10 both;
+    animation: example1 4s 10 both;
+    overflow-x: hidden;
+}
+*/
+
+@media screen and (max-width: 600px) {
+    .app_wrapper_container {
+        padding-right: 1.7rem;
+        padding-left: 1.7rem;
+    }
+    .app_wrapper_container_holding  {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        height: 90vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    .app_wrapper_inner {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        object-fit: contain;
+        height: fit-content;
+    }
+    .app_svg_container {
+        margin-top: 0px;
+    }
+    #foodora-home-app-webp {
+        width: 400px;
+        max-width: fit-content;
+    }
+
+
+  }

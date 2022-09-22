@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    margin-bottom: -;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 10px;
+    border-bottom: 1px solid #ebebeb;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header_wrapper
+.header_wrapper_logo {
+    display: inherit;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.header_wrapper_logo #foodora_icon_svg {
+    width: 28px;
+    padding-left: 10px;
+}
+
+#foodora_text_svg {
+    width: 100px;
+    padding-left: 5px;
+}
+
+.header_wrapper_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header_wrapper_menu_language {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+    height: 50px;
+}
+.header_wrapper_menu_language a {
+    color: #707070;
+    font-size: small;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_wrapper_menu_language::before {
+    content: '';
+    width: 1px;
+    background: #ebebeb;
+    height: 25px;
+    position: relative;
+    left: -100%;
+}
+
+.header_wrapper_menu_login {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+    height: 50px;
+}
+
+.header_wrapper_menu_login::before {
+    content: '';
+    width: 1px;
+    background: #ebebeb;
+    height: 25px;
+    position: relative;
+    left: -30%;
+}
+
+.header_wrapper_menu_login #loginText {
+    padding-left: 8px;
+    color: #333;
+    font-size: small;
+    font-weight: bold;
+}
+.header_wrapper_menu_cart {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+    margin: 0px 19px;
+    FONT-VARIANT: JIS04;
+    height: 50px;
+    cursor: pointer;
+}
+.header_wrapper_menu_cart::before {
+    content: '';
+    width: 1px;
+    background: #ebebeb;
+    height: 25px;
+    position: relative;
+    left: -70%;
+}

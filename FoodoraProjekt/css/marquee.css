@@ -1,0 +1,73 @@
+.marquee {
+    margin-top: 80vh;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ca0c5e;
+}
+
+.marquee {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.track {
+    position: relative;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+}
+
+#appText {
+    position: absolute;
+    z-index: -1;
+    color: #f5f5f5c7;
+    font-weight: bold;
+    margin-top: -13rem;
+    font-size: 11rem;
+    padding-left: 19rem;
+}
+#appUnderText {
+    position: absolute;
+    padding-left: 19rem;
+    margin-top: -3rem;
+    color: black;
+    z-index: 2;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .marquee {
+      margin-top: 155vh;
+    }
+
+    #appText {
+    padding: 1.7rem;
+    margin-top: -15rem;
+    }
+    #appUnderText {
+    padding: 1.7rem;
+    margin-top: -5rem;
+    }
+    .track {
+        animation: marquee 10s linear infinite;
+    }
+
+  }

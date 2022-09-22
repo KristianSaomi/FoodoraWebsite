@@ -1,0 +1,41 @@
+.joinUs {
+    position: fixed;
+    padding: 0.3%;
+    bottom: 10px;
+    right: 18px;
+    animation: MoveUpDown 2s linear infinite;
+    animation-timing-function: linear;
+}
+.bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    padding: 7px;
+    background-color: #e21b70;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.425);
+    transition: 350ms ease-in-out;
+
+}
+.joinUs:hover {
+    animation-play-state: paused;
+}
+.bubble:hover{
+    background-color: #a30b4d;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 12px;
+    }
+  }

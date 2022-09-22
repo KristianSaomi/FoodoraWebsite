@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodora</title>
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/mainSection.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/cities.css">
+    <link rel="stylesheet" href="css/appContainer.css">
+    <link rel="stylesheet" href="css/marquee.css">
+    <link rel="stylesheet" href="css/joinUsBubble.css">
+    <link rel="stylesheet" href="css/cartMenu.css">
+    <script src="JS/jsonProps.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Images/FoodoraTabIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/jsonProps.js"></script>
+    <script src="JS/cartMenu.js"></script>
+</head>
+
+<body id="documentBody" class="docBody">
+    <header class="header_wrapper">
+        <div class="header_wrapper_logo">
+            <img id="foodora_icon_svg" src="Images\logo-simple.svg" alt="foodora logo svg">
+            <img id="foodora_text_svg" src="Images\foodora-text.svg" alt="Foodora text svg">
+        </div>
+
+        <div class="header_wrapper_menu">
+            <div class="header_wrapper_menu_language">
+                <a href="https://www.foodora.se/">EN</a>
+            </div>
+            <div class="header_wrapper_menu_login">
+                <img id="foodora_icon_login_svg" src="Images\foodora-login-icon.svg">
+                <span id="loginText">LOGGA IN</span>
+            </div>
+            <div class="header_wrapper_menu_cart">
+                <a onclick="openNav()"><img id="foodora_icon_cart_svg" src="Images\foodora-cart-icon.svg"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Foodora cart menu-->
+    <div id="foodoraCartMenu" class="sideMenu">
+        <div class="cart_menu_inner_container">
+            <a onclick="closeNav()"><img id="closeBtn" src="Images\closeBtn.svg"></a>
+            <span class="menu_inner_container_header">
+                <h1>Your cart</h1>
+                <p>Start adding good food to your cart</p>
+                <hr>
+            </span>
+        </div>
+
+    </div>
+    <!--END -->
+
+    <main class="main_wrapper">
+        <div class="main_wrapper_search">
+            <h1 id="main_wrapper_title">Det du behöver, minuter från din dörr</h1>
+            <div class="main_wrapper_searchDiv">
+                <form>
+                    <input id="main_wrapper_search_form" type="text" placeholder="Din adress (t.ex. Riddargatan 2)"
+                        name="search">
+                    <img id="foodora-locate-me-svg" src="Images\foodora-locate-me.svg">
+                </form>
+                <div class="main_wrapper_searchDiv_button">
+                    <button>Leverans</button>
+                    <p id="main_wrapper_searchDiv_button_text">eller</p>
+                    <button>Pick-up</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="vendor_wrapper_container">
+        <div class="vendor_wrapper_inner">
+            <h2 class="vendor_main_title">foodora market</h2>
+            <p class="vendor_main_title_under">Din matbutik online</p>
+            <div class="vendor_wrapper_inner_whiteBox">
+                <h3 class="vendor_wrapper_whiteBox_Title">Matvaror till dörren - från 15 min</h3>
+                <p class="vendor_wrapper_whiteBox_paraG">Mjölk, bröd, bananer, chips, schampo - ja, allt du behöver där
+                    hemma, med leveranstid från 15
+                    minuter. Titta in hos vår helt egna butikskedja för matvaruleveranser, foodora market. Beställ
+                    matvaror för som-i-butiken-priser, med blixtsnabb leverans!</p>
+                <button class="vendor_whiteBox_btn">besök foodora market</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cities_wrapper_container">
+        <h1 class="cities_title"> Cities</h1>
+        <h2 class="cities_sub_title"> Find us in these cities and many more!</h2>
+        <div class="cities_wrapper_inner">
+        </div>
+    </section>
+
+    <div class="marquee">
+        <h1 id="appText">App</h1>
+        <h2 id="appUnderText">Put us in your pocket</h2>
+        <div class="track">
+            <div class="content">
+                <p id="rollingText">Handla på <span class="boldText">Foodora.</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla pasta på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla kebab på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla subway på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla ála carte på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla taco på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla coca cola på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla thai på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla chips på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Handla choklad på <span class="boldText">Foodora.</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="app_wrapper_container">
+        <div class="app_wrapper_container_holding">
+            <div class="app_wrapper_inner">
+                <h1>Your favorite food - delivered straight to your door</h1>
+                <p>All the restaurants you like - all in one app! Discover the food for you and let the first bite
+                    count!
+                    Download our app!</p>
+                <div class="app_svg_container">
+                    <a href="https://apps.apple.com/se/app/onlinepizza/id421369701" target="_blank"><img
+                            src="Images\app3.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=se.onlinepizza" target="_blank"><img
+                            src="Images\app2.svg"></a>
+                    <a href="https://appgallery.huawei.com/#/app/C104002491" target="_blank"><img
+                            src="Images\app1.svg"></a>
+                </div>
+            </div>
+            <div class="app_wrapper_inner" style="z-index: 8;">
+                <img id="foodora-home-app-webp" src="cityImages\home-foodora-apps.webp">
+                <!-- <h1 class="foodora_home-app-webp-orderNow">Beställ nu!</h1> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!--Join us floating bubble-->
+    <div class="joinUs">
+        <section class="bubble">Join us now!</section>
+    </div>
+</body>
+
+</html>

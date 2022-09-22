@@ -1,0 +1,74 @@
+{
+    "Cities":[
+        {
+            "name": "Södertälje",
+            "bigLetter": "S",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Södertälje.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Göteborg",
+            "bigLetter": "G",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Göteborg.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Vetlanda",
+            "bigLetter": "V",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Vetlanda.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Malmö",
+            "bigLetter": "M",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Malmö.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Uppsala",
+            "bigLetter": "U",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Uppsala.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Örebro",
+            "bigLetter": "Ö",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Örebro.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Linköping",
+            "bigLetter": "L",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Linköping.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Karlstad",
+            "bigLetter": "K",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Karlstad.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Norrköping",
+            "bigLetter": "N",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Norrköping.png",
+            "arrow": "Images/arrow.svg"
+        },
+        {
+            "name": "Borås",
+            "bigLetter": "B",
+            "deliveryAttributes": ["Delivery","pick-up"],
+            "imgs": "cityImages/Borås.png",
+            "arrow": "Images/arrow.svg"
+        }
+    ]
+}

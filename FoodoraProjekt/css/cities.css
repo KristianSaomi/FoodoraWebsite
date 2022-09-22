@@ -1,0 +1,109 @@
+.cities_wrapper_container  {
+    height: 45vh;
+    padding-right: 19rem;
+    padding-left: 19rem;
+    margin-top: -21vh;
+}
+.cities_wrapper_inner {
+    display: grid;
+
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.cityTemplate {
+    display: inline-flex;
+    flex-direction:row;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-items: end;
+    justify-content: space-between;
+    text-align: start;
+    border: 1px solid #f5f5f5;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+.cityTemplate:hover {
+    transform:scale(0.95) 
+}
+.cityTemplateLetter {
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 230px;
+    position: absolute;
+    top: -5%;
+    left: 3%;
+    color:#e21b70;
+    font-weight: bold;
+    opacity: 0;
+    transition: 250ms ease-in-out;
+}
+.cityTemplate:hover .cityTemplateLetter {
+    opacity: 50%;
+}
+
+.cityTemplateName {
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.cities_wrapper_container .cities_title {
+    display: inline;
+    position:relative;
+    margin: 0px;
+    top: 105px;
+    font-size: 11rem;
+    font-weight: bold;
+    z-index: -1;
+    color: #f5f5f5;
+}
+
+.cities_wrapper_container .cities_sub_title{
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+.Cityarrow {
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    opacity: 0%;
+    transition: 250ms ease-in-out;
+}
+
+.cityTemplate:hover .Cityarrow {
+    opacity: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cities_wrapper_inner {
+      grid-template-columns: 1fr 1fr;
+    }
+    .cityTemplate {
+        width: auto !important;
+        height: 250px !important;
+        margin: 10px !important;
+    
+    }
+    .cityTemplateLetter {
+        margin-bottom:  -40px !important;
+        padding: 0px !important;
+        font-size: 200px !important;
+    }
+    .cities_wrapper_container {
+        margin-top: -30px;
+        padding: 1.7rem;
+    } 
+    .cities_wrapper_container .cities_sub_title {
+        font-size: 1.3rem !important;
+        margin-left: 9px !important;
+    } 
+    .cities_wrapper_container .cities_title {
+        font-size: 10rem !important;
+
+    }
+
+  }

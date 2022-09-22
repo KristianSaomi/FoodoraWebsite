@@ -1,0 +1,56 @@
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    -webkit-box-shadow: -17px 0px 20px -12px rgba(0,0,0,0.44);
+    -moz-box-shadow: -17px 0px 20px -12px rgba(0,0,0,0.44);
+    box-shadow: -17px 0px 20px -12px rgba(0,0,0,0.44);
+
+}
+.docBody {
+    transition: margin-right .5s;
+}
+
+#closeBtn {
+    cursor: pointer;
+}
+
+.cart_menu_inner_container {
+    padding: 5px 5px 5px 5px;
+}
+
+.menu_inner_container_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu_inner_container_header h1 {
+    font-size: 18px;
+    color: #333333;
+    transition: all 250ms ease-in-out;
+}
+.menu_inner_container_header p {
+    font-size: 15px;
+    color: #333333;
+    margin: 0px;
+    transition: all 250ms ease-in-out;
+
+}
+.menu_inner_container_header hr {
+    width: 90%;
+    height:1.5px;
+    border-width:0;
+    color: #333333;
+    background-color:#333333;
+    transition: all 250ms ease-in-out;
+
+}
